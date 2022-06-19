@@ -1,0 +1,168 @@
+nohup: 忽略输入
+2022-06-17 15:55:35.147466: I tensorflow/core/util/util.cc:169] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING:tensorflow:From /home/liugaohong/anaconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/compat/v2_compat.py:107: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 0.555 seconds.
+Prefix dict has been built successfully.
+In train data:
+The positive data's length is : 9701
+The negative data's length is : 9429
+main.py:60: DeprecationWarning: Call to deprecated `word_vec` (Use get_vector instead).
+  wordsArray.append(model.wv.word_vec(line[i]))
+In test data:
+The positive data's length is : 995
+The negative data's length is : 999
+------------------------------
+The trainData's shape is: (19130, 25, 200)
+The testData's shape is: (1994, 25, 200)
+The trainSteps's shape is: (19130,)
+The testSteps's shape is: (1994,)
+The trainLabels's shape is: (19130, 2)
+The testLabels's shape is: (1994, 2)
+main.py:168: UserWarning: `tf.nn.rnn_cell.BasicLSTMCell` is deprecated and will be removed in a future version. This class is equivalent as `tf.keras.layers.LSTMCell`, and will be replaced by that in Tensorflow 2.0.
+  state_is_tuple=True)
+WARNING:tensorflow:From main.py:180: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+WARNING:tensorflow:From /home/liugaohong/anaconda3/envs/tensorflow/lib/python3.7/site-packages/keras/layers/rnn/legacy_cells.py:726: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /home/liugaohong/anaconda3/envs/tensorflow/lib/python3.7/site-packages/tensorflow/python/util/dispatch.py:1082: softmax_cross_entropy_with_logits (from tensorflow.python.ops.nn_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+
+Future major versions of TensorFlow will allow gradients to flow
+into the labels input on backprop by default.
+
+See `tf.nn.softmax_cross_entropy_with_logits_v2`.
+
+2022-06-17 15:56:04.826149: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-06-17 15:56:06.263850: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1532] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 15392 MB memory:  -> device: 0, name: Quadro GP100, pci bus id: 0000:17:00.0, compute capability: 6.0
+2022-06-17 15:56:06.264915: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1532] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 15371 MB memory:  -> device: 1, name: Quadro GP100, pci bus id: 0000:73:00.0, compute capability: 6.0
+2022-06-17 15:56:06.265827: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1532] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 15392 MB memory:  -> device: 2, name: Quadro GP100, pci bus id: 0000:d5:00.0, compute capability: 6.0
+2022-06-17 15:56:06.356800: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:354] MLIR V1 optimization pass is not enabled
+Initialized
+The step is: 500
+In train data,the loss is:0.6183
+In test data,the accuracy is:70.11%
+The step is: 1000
+In train data,the loss is:0.5276
+In test data,the accuracy is:74.27%
+The step is: 1500
+In train data,the loss is:0.4625
+In test data,the accuracy is:77.83%
+The step is: 2000
+In train data,the loss is:0.4213
+In test data,the accuracy is:79.94%
+The step is: 2500
+In train data,the loss is:0.3849
+In test data,the accuracy is:82.10%
+The step is: 3000
+In train data,the loss is:0.3621
+In test data,the accuracy is:83.85%
+The step is: 3500
+In train data,the loss is:0.3446
+In test data,the accuracy is:84.60%
+The step is: 4000
+In train data,the loss is:0.3167
+In test data,the accuracy is:86.71%
+The step is: 4500
+In train data,the loss is:0.3119
+In test data,the accuracy is:87.51%
+The step is: 5000
+In train data,the loss is:0.2761
+In test data,the accuracy is:87.26%
+The step is: 5500
+In train data,the loss is:0.2722
+In test data,the accuracy is:88.16%
+The step is: 6000
+In train data,the loss is:0.2536
+In test data,the accuracy is:89.57%
+The step is: 6500
+In train data,the loss is:0.2322
+In test data,the accuracy is:91.12%
+The step is: 7000
+In train data,the loss is:0.2319
+In test data,the accuracy is:89.62%
+The step is: 7500
+In train data,the loss is:0.1990
+In test data,the accuracy is:90.42%
+The step is: 8000
+In train data,the loss is:0.1966
+In test data,the accuracy is:93.18%
+The step is: 8500
+In train data,the loss is:0.1747
+In test data,the accuracy is:93.58%
+The step is: 9000
+In train data,the loss is:0.1637
+In test data,the accuracy is:93.43%
+The step is: 9500
+In train data,the loss is:0.1614
+In test data,the accuracy is:94.08%
+The step is: 10000
+In train data,the loss is:0.1360
+In test data,the accuracy is:93.73%
+The step is: 10500
+In train data,the loss is:0.1363
+In test data,the accuracy is:95.54%
+The step is: 11000
+In train data,the loss is:0.1142
+In test data,the accuracy is:95.54%
+The step is: 11500
+In train data,the loss is:0.1074
+In test data,the accuracy is:94.83%
+The step is: 12000
+In train data,the loss is:0.0970
+In test data,the accuracy is:93.73%
+The step is: 12500
+In train data,the loss is:0.0836
+In test data,the accuracy is:96.04%
+The step is: 13000
+In train data,the loss is:0.0820
+In test data,the accuracy is:95.39%
+The step is: 13500
+In train data,the loss is:0.0628
+In test data,the accuracy is:95.19%
+The step is: 14000
+In train data,the loss is:0.0606
+In test data,the accuracy is:95.44%
+The step is: 14500
+In train data,the loss is:0.0602
+In test data,the accuracy is:85.51%
+The step is: 15000
+In train data,the loss is:0.0649
+In test data,the accuracy is:94.88%
+The step is: 15500
+In train data,the loss is:0.0476
+In test data,the accuracy is:96.04%
+The step is: 16000
+In train data,the loss is:0.0350
+In test data,the accuracy is:95.19%
+The step is: 16500
+In train data,the loss is:0.0401
+In test data,the accuracy is:95.64%
+The step is: 17000
+In train data,the loss is:0.0432
+In test data,the accuracy is:95.99%
+The step is: 17500
+In train data,the loss is:0.0331
+In test data,the accuracy is:95.44%
+The step is: 18000
+In train data,the loss is:0.0268
+In test data,the accuracy is:96.29%
+The step is: 18500
+In train data,the loss is:0.0245
+In test data,the accuracy is:95.69%
+The step is: 19000
+In train data,the loss is:0.0198
+In test data,the accuracy is:96.09%
+The step is: 19500
+In train data,the loss is:0.0165
+In test data,the accuracy is:96.04%
+The step is: 20000
+In train data,the loss is:0.0222
+In test data,the accuracy is:96.09%
+time cost: 475
